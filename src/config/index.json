@@ -1,0 +1,55 @@
+{
+  "app": {
+    "name": "Livetell",
+    "description": "Your Ultimate Edge in the Meme Coin Arena",
+    "url": "https://livetell.com"
+  },
+  "social": {
+    "twitter": "https://twitter.com/livetellai",
+    "telegram": "https://t.me/livetellai",
+    "github": "https://github.com/livetellai"
+  },
+  "email": {
+    "from": "Livetell <noreply@livetell.com>",
+    "subjects": {
+      "welcome": "Welcome to Livetell - Your Gateway to Smart Trading! 🚀"
+    }
+  },
+  "referral": {
+    "codeLength": 8,
+    "rewards": {
+      "referrer": {
+        "points": 100,
+        "description": "Points earned for each successful referral"
+      },
+      "referee": {
+        "points": 50,
+        "description": "Points earned for joining with a referral code"
+      }
+    },
+    "tiers": [
+      {
+        "name": "Bronze",
+        "minReferrals": 0,
+        "benefits": ["Early Access"]
+      },
+      {
+        "name": "Silver",
+        "minReferrals": 3,
+        "benefits": ["Early Access", "Premium Features"]
+      },
+      {
+        "name": "Gold",
+        "minReferrals": 10,
+        "benefits": ["Early Access", "Premium Features", "Priority Support"]
+      }
+    ]
+  },
+  "mongodb": {
+    "dbName": "livetell",
+    "collections": {
+      "waitlist": "waitlist",
+      "referrals": "referrals"
+    }
+  }
+} 

@@ -13,7 +13,8 @@ async function getGmailService() {
 
   // Set credentials using refresh token
   oauth2Client.setCredentials({
-    refresh_token: process.env.GMAIL_REFRESH_TOKEN
+    refresh_token: process.env.GMAIL_REFRESH_TOKEN,
+    scope: SCOPES[0]
   })
 
   return google.gmail({ version: 'v1', auth: oauth2Client })

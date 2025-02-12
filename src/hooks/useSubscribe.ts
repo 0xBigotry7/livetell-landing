@@ -100,7 +100,7 @@ export function useSubscribe() {
       setState(prev => ({
         ...prev,
         status: 'error',
-        message: 'Something went wrong. Please try again.'
+        message: error instanceof Error ? error.message : 'Something went wrong. Please try again.'
       }))
     }
   }
